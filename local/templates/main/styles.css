@@ -12,6 +12,10 @@ h1 {
 	color:#2f9dea;
 	font-size:14px;
 }
+h2 {
+	margin-left: 5%;
+	font-size:12px;
+}
 a {
 	color:#5caddc;
 	text-decoration:underline;
@@ -88,8 +92,9 @@ a:hover {
 	color:#085f75;
 	text-decoration:none;
 }
-.content {
-	height:100px;
+.content b,h1 {
+	font-size:20px;
+	margin-left: 5%;
 }
 .headerPic {
 	background:url(images/headerBackground.jpg) no-repeat left top;

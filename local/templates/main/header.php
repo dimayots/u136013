@@ -72,10 +72,24 @@
         </div>
         <div class="mainMenu">
             <ul>
-                <li id="active"><a href="">Главная</a></li>
-                <li><a href="">Услуги</a></li>
-                <li><a href="">Контакты</a></li>
-                <li><a href="">Запись на прием</a></li>
+                <? $APPLICATION->IncludeComponent(
+                    "bitrix:menu",
+                    "top_menu",
+                    array(
+                        "COMPONENT_TEMPLATE" => "top_menu_".LANGUAGE_ID,
+                        "ROOT_MENU_TYPE" => "top_menu_".LANGUAGE_ID,
+                        "MENU_CACHE_TYPE" => "A",
+                        "MENU_CACHE_TIME" => "3600",
+                        "MENU_CACHE_USE_GROUPS" => "Y",
+                        "MENU_CACHE_GET_VARS" => array(),
+                        "MAX_LEVEL" => "1",
+                        "CHILD_MENU_TYPE" => "left",
+                        "USE_EXT" => "Y",
+                        "DELAY" => "N",
+                        "ALLOW_MULTI_SELECT" => "N"
+                    ),
+                    false
+                ); ?>
             </ul>
         </div>
     </div>
