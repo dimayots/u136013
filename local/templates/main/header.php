@@ -29,8 +29,7 @@
                             "EDIT_TEMPLATE" => "",
                             "PATH" => SITE_TEMPLATE_PATH."/include_areas/logo.php"
                         )
-                    );?>
-                </a>
+                    );?></a>
                 <?$APPLICATION->IncludeComponent(
                     "bitrix:main.include",
                     "",
@@ -39,7 +38,7 @@
                         "AREA_FILE_SHOW" => "file",
                         "AREA_FILE_SUFFIX" => "inc",
                         "EDIT_TEMPLATE" => "",
-                        "PATH" => SITE_TEMPLATE_PATH."/lang/".LANGUAGE_ID."/registry.php"
+                        "PATH" => SITE_TEMPLATE_PATH."/include_areas/".LANGUAGE_ID."/registry.php"
                     )
                 );?>
                 <span>
@@ -51,13 +50,12 @@
                             "AREA_FILE_SHOW" => "file",
                             "AREA_FILE_SUFFIX" => "inc",
                             "EDIT_TEMPLATE" => "",
-                            "PATH" => SITE_TEMPLATE_PATH."/lang/".LANGUAGE_ID."/policlinic.php"
+                            "PATH" => SITE_TEMPLATE_PATH."/include_areas/".LANGUAGE_ID."/policlinic.php"
                         )
                     );?>
                 </span>
             </div>
             <div class="search">
-                <?=GetMessage("search");?>
                 <?$APPLICATION->IncludeComponent(
                     "bitrix:main.include",
                     "",
@@ -66,7 +64,7 @@
                         "AREA_FILE_SHOW" => "file",
                         "AREA_FILE_SUFFIX" => "inc",
                         "EDIT_TEMPLATE" => "",
-                        "PATH" => SITE_TEMPLATE_PATH."/lang/".LANGUAGE_ID."/search.php"
+                        "PATH" => SITE_TEMPLATE_PATH."/include_areas/".LANGUAGE_ID."/search.php"
                     )
                 );?>:<br>
                 <div class="si"><input name="" type="text" /></div><div><a href=""><img src="<?=SITE_TEMPLATE_PATH;?>/images/searchButton.jpg" alt="" width="66" height="26" /></a></div>
@@ -74,11 +72,10 @@
         </div>
         <div class="mainMenu">
             <ul>
-                <li id="active"><a href="">Ams</a></li>
-                <li><a href="">Technology</a></li>
-                <li><a href="">Locations</a></li>
-                <li><a href="">Treatments</a></li>
-                <li><a href="">About us</a></li>
+                <li id="active"><a href="">Главная</a></li>
+                <li><a href="">Услуги</a></li>
+                <li><a href="">Контакты</a></li>
+                <li><a href="">Запись на прием</a></li>
             </ul>
         </div>
     </div>

@@ -180,9 +180,9 @@ input {
 	padding:0 30px;
 } 
 #footer {
-	height:85px;
+	height:22px;
 	text-align:center;
-	padding-top:30px;
+	padding-top:10px;
 	background:url(images/footer.jpg) repeat-x left top;
 	margin-top:20px;
 } 
