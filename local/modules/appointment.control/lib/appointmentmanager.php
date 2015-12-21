@@ -14,7 +14,7 @@ class AppointmentManager
 {
     public static function AddAppointment($employeeId, $date, $visitor, $price)
     {
-        if(!$employeeId || !$date || !$visitor || $price)
+        if(!$employeeId || !$date || !$visitor || !$price)
         {
             return false;
         }

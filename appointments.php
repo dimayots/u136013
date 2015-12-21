@@ -1,4 +1,11 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("appointments");
-?>Запись на прием<br><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
+?><br></br>
+<h2>
+<?$APPLICATION->IncludeComponent(
+	"appointment",
+	"",
+	Array(
+	)
+);?> </h2><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
