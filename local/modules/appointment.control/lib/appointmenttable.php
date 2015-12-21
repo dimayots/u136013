@@ -33,10 +33,10 @@ class AppointmentTable extends Entity\DataManager
                 'autocomplete' => true,
                 'title' => Loc::getMessage('APP_ID')
             ),
-            'UF_EMPID' => array(
+            'UF_EMP' => array(
                 'data_type' => 'integer',
                 'required' => true,
-                'title' => Loc::getMessage('APP_EMPID'),
+                'title' => Loc::getMessage('APP_EMP'),
             ),
             'UF_DATE' => array(
                 'data_type' => 'datetime',
@@ -54,7 +54,7 @@ class AppointmentTable extends Entity\DataManager
                 'title' => Loc::getMessage('APP_PRICE'),
             ),
             new Entity\ReferenceField(
-                'UF_EMPID',
+                'UF_EMP',
                 'Birtrix\Main\FileTable',
                 array('=this.UF_EMPID' => 'ref.ID')
             ),

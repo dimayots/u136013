@@ -22,7 +22,7 @@ class AppointmentManager
         return AppointmentTable::add(
             array
             (
-                'UF_EMPID' => $employeeId,
+                'UF_EMP' => $employeeId,
                 'UF_DATE' => \Bitrix\Main\Type\DateTime::createFromUserTime($date),
                 'UF_VISITOR' => $visitor,
                 'UF_PRICE' => $price,
